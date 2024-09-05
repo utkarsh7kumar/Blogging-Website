@@ -1,0 +1,148 @@
+
+@import url('https://fonts.google.com/specimen/Poppins#standard-styles');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f5, #dff1ff);
+}
+
+section .color
+{
+    position: absolute;
+    filter: blur(150px);
+    
+}
+
+/*BACKGROUND BOX COCLOR_01*/
+
+section .color:nth-child(1)
+{
+    top: -350px;
+    width: 800px;
+    height: 900px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);;
+}
+
+/*BACKGROUND BOX COCLOR_02*/
+
+section .color:nth-child(2)
+{
+    bottom: -150px;
+    left: 100px;
+    width: 700px;
+    height: 800px;
+    background: pink;   
+}
+
+/*BACKGROUND BOX COCLOR_03*/
+
+section .color:nth-child(3)
+{
+    bottom: -150px;
+    right: 70px;
+    width: 700px;
+    height: 400px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);   
+}
+
+
+
+/*COTAINER*/
+
+.cotainer
+{
+    justify-content: center;
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 14000px;
+    min-height: 650px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    bottom: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.cotainer:hover
+{
+    box-shadow: 0 17px 50px 0 darkmagenta;
+}
+
+/*FORM_1*/
+
+.form 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h2
+{
+    color:rgb(67, 7, 67);
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    color: black;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.post-details p{
+    color:rgb(67, 7, 67);
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+.post-top {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+}
+
+.post-top > img {
+    margin-top: 5PX;
+    width: 585px;
+    height: 307px;
+}
+
+.post-top > img:hover 
+{
+    box-shadow: 0 17px 50px 0 darkmagenta;
+}
+.post-top-details {
+        width: 35%;
+        margin-top: 30px;
+        margin-left: 45px;
+}
+
+.post-details {
+    width: 100%;
+}

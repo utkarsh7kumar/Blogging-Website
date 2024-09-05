@@ -1,0 +1,465 @@
+@import url('https://fonts.google.com/specimen/Poppins#standard-styles');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body
+{
+    overflow: hidden;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.2024160005799195) 0%, rgba(242,139,244,1) 100%);
+}
+
+a{
+  text-decoration: none;
+}
+
+.flex-row{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.text-gray{
+  color: floralwhite;
+}
+
+.nav{
+  background: darkmagenta;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  color:floralwhite;
+  transition:height 1s ease-in-out;
+}
+
+.nav .nav-menu{
+  justify-content: space-between;
+}
+.nav-toggle-collapse{
+  position:absolute;
+  top:0%;
+  width: 100%;
+  cursor:pointer;
+  display:none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+  display:flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0
+}
+
+.collapse{
+  height:30rem;
+
+}
+
+.nav .toggle-collapse .toggle-icons i{
+  font-size: 1.4rem;
+  color:floralwhite;
+
+}
+
+.nav .nav-items{
+  display: flex;
+  margin:0;
+  color:floralwhite;
+}
+
+.nav .nav-items .nav-link{
+  padding:1.6rem 1rem;
+  font-size: 1.1rem;
+  position:relative;
+  color:floralwhite;
+}
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  display:block;
+  color:floralwhite;
+}
+
+.nav .social{
+  padding: 1.4rem 0
+}
+
+.nav .social .login-button{
+  background:floralwhite;
+  color:darkmagenta;
+  font-family:'Times New Roman', Times, serif;
+  font-size:large;
+  font-style: italic;
+  font-weight: bold;
+  padding:.5rem;
+  border-radius: 6rem;
+}
+
+.nav .social .login-button:hover{
+  cursor:pointer;    
+}
+
+.nav .nav-items .nav-link a{
+  color:floralwhite;
+  cursor:pointer;
+}
+
+.nav .nav-items .nav-link a:hover{
+  font-size: 1.3rem;
+  cursor:pointer;
+}
+
+.dropdown{
+  float:left;
+  overflow:hidden;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background-color:darkmagenta;
+  z-index: 1;
+}
+
+.dropdown-content a{
+  float:none;
+  color:floralwhite;
+  padding:12px 16px;
+  text-decoration:none;
+  display:block;
+  text-align:left;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: linear-gradient(to bottom, #f1f4f5, #dff1ff);*/
+}
+
+section .color
+{
+    position: absolute;
+    filter: blur(150px);
+    
+}
+
+/*BACKGROUND BOX COCLOR_01*/
+
+section .color:nth-child(1)
+{
+    top: -350px;
+    width: 800px;
+    height: 900px;
+    /*background: darkmagenta;*/
+}
+
+/*BACKGROUND BOX COCLOR_02*/
+
+section .color:nth-child(2)
+{
+    bottom: -150px;
+    left: 100px;
+    width: 700px;
+    height: 800px;
+    /*background: pink; */  
+}
+
+/*BACKGROUND BOX COCLOR_03*/
+
+section .color:nth-child(3)
+{
+    bottom: -150px;
+    right: 70px;
+    width: 700px;
+    height: 400px;
+    /*background: darkmagenta;   */
+}
+
+/*COTAINER*/
+
+.cotainer
+{
+    position: relative;
+    margin-left: 25px;
+    width: 800px;
+    min-height: 650px;
+    /*background: rgba(255,255,255,0.1);*/
+    border-radius: 10px;
+    display: flex;
+    right: 350px;
+    bottom: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/*FORM_1*/
+
+.form 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h2
+{
+    position: relative;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.form h2::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 350px;
+    height: 4px;
+    /*background: black;*/
+}
+
+/*FORM_1*/
+
+.formtwo 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.formtwo h2
+{
+    position: relative;
+    color: floralwhite;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.formtwo h2::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 350px;
+    height: 4px;
+    /*background: linear-gradient(45deg, rgb(86, 10, 86), rgb(50, 12, 66));*/
+}
+.form .inputBox
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox input
+{
+    width: 650px;
+    /*background: rgba(255,255,255,0.2);*/
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-radius: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form .inputBoxWrite textarea
+{
+    width: 650px;
+    height: 250px;
+    resize: none;
+    position: relative;
+    /*background: rgba(255,255,255,0.2);*/
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-radius: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.cotainertwo .formtwo h2{
+  color: black;
+}
+
+.form .inputBox input::placeholder
+{
+    color: black;
+
+}
+.form .inputBoxWrite textarea::placeholder
+{
+    color: black;
+
+}
+.button {
+  background:darkmagenta;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-radius: 1px solid rgba(255,255,255,0.2);
+  color: floralwhite;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button1:hover {
+  box-shadow: 0 17px 50px 0 darkmagenta;
+}
+
+.cotainer:hover
+{
+    box-shadow: 0 17px 50px 0 darkmagenta;
+}
+
+.cotainertwo:hover
+{
+    box-shadow: 0 17px 50px 0 darkmagenta;
+}
+
+
+.cotainertwo{
+
+    position: absolute;
+    margin-right: -820px;
+    margin-bottom: 24px;
+    width: 660px;
+    height: 650px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    /* bottom: 10px; */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+  
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: floralwhite;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  cursor: pointer;
+  background: transparent;
+  color:black;
+  font-size:18px;
+  border: 3px;
+  border-color:rgb(50, 12, 66);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 10px;
+}
+
+.content:hover{
+  box-shadow: 0 17px 50px 0 darkmagenta;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

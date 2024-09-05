@@ -1,0 +1,200 @@
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+i{
+    color:rgb(67, 7, 67);
+    margin-left: 20px;
+    font-size: 30px;
+    
+}
+
+span .back{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(67, 7, 67);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.google.com/specimen/Poppins#standard-styles');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f5, #dff1ff);
+}
+
+section .color
+{
+    position: absolute;
+    filter: blur(150px);
+    
+}
+
+/*BACKGROUND BOX COCLOR_01*/
+
+section .color:nth-child(1)
+{
+    top: -350px;
+    width: 800px;
+    height: 900px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);;
+}
+
+/*BACKGROUND BOX COCLOR_02*/
+
+section .color:nth-child(2)
+{
+    bottom: -150px;
+    left: 100px;
+    width: 700px;
+    height: 800px;
+    background: pink;   
+}
+
+/*BACKGROUND BOX COCLOR_03*/
+
+section .color:nth-child(3)
+{
+    bottom: -150px;
+    right: 70px;
+    width: 700px;
+    height: 400px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);   
+}
+
+
+
+/*COTAINER*/
+
+.cotainer
+{
+    justify-content: center;
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 14000px;
+    min-height: 650px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    bottom: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.cotainer:hover
+{
+    box-shadow: 0 17px 50px 0 darkmagenta;
+}
+
+/*FORM_1*/
+
+.form 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h2
+{
+    color:rgb(67, 7, 67);
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    color: black;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+

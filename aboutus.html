@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <!---Owl-carousal-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!--AOS Library-->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="./css/all.css">
+    <!--custom styles-->
+    <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container" id="blur">
+        <div class="content">
+            <a href="#" onclick = "toggle()">Blogger</a>
+
+            
+        </div>
+
+
+        <header id="sidenav">
+            <i class="fas fa-bars" aria-hidden="true" id="menu"></i>
+            
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="cards.html"><i class="fa-solid fa-book-open-reader"></i> Review</a></li>
+                    <li><a href="index.html#cat"><i class="fa-solid fa-book-open-reader"></i> Categories</a></li>
+                    <li><a href="RECENT POST.html"><i class="fa-solid fa-blog"></i> Recent Posts</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-house"></i> About Us</a></li>
+                    <li><a href="FAQ.HTML"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                    <li><a href="index.html#contact"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                    <li><a href="WRITEVLOG.HTML"><i class="fa-solid fa-pen-to-square"></i> Write Blog</a></li>
+
+                </ul>
+            
+        </header>
+    
+    </div>
+
+    <div id="popup">
+        <h2>About Us !!!</h2>
+        <br>
+        <p>Blogger is a joint endeavour that makes room for spilling thought-ink and navigating through a world of a parallel reality without any fear or judgement.
+           It provides a unique space to budding writers to safely write and post their content for the world to see. Likewise it facilitates the explorers to read 
+           super-fresh content in a host of categories and be a part of this uplifting exercise.
+        </p>
+        <br>
+        <p>We at Blogger work collectively to create, collect and organise creative content for all.</p>
+        <br>
+        <p>Happy Blogging</p>
+        <br>
+        <br>
+        <br>
+        
+        <a href="#" onclick = "toggle()">Close</a>
+    </div>
+
+
+    <script type="text/javascript">
+        function toggle()
+        {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+
+<script type="text/javascript">
+    var menu = document.getElementById("menu");
+    var sidenav = document.getElementById("sidenav");
+    sidenav.style.width="0px";
+    menu.onclick=function(){
+        if(sidenav.style.width=="0px"){
+            sidenav.style.width="250px";
+        }
+        else{
+            sidenav.style.width="0px";
+        }
+    }
+</script>
+
+</body>
+
+
+
+</html>

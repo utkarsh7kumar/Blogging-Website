@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WRITE_BLOG</title>
+    <link rel="stylesheet" href="./css/WRITEVLOG.CSS">
+  </head>
+  <body>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="index.html" class="text-gray">Blogger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="index.html#cat">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <div class="dropdown">
+                        <a href="#">Create <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="WRITEVLOG.HTML">Blog</a>
+                            <a href="cards.html">Review</a>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="nav-link">
+                        <a href="FAQ.HTML">FAQ</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="index.html#contact">Contact Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <section>
+          <div class="color"></div>
+          <div class="color"></div>
+          <div class="color"></div>
+              <div class="cotainer">
+                  <div class="form">
+                      <h2>POST YOUR BLOG HERE</h2>
+                      <form action="upload.php" method="POST" enctype="multipart/form-data">
+                          <div class="inputBox">
+                              <input type="text" placeholder="Enter The Title Of Your Blog.." onfocus="this.placeholder = '' "  onblur = "this.placeholder = 'Enter The Title Of Your Blog.' " name="title" spellcheck="true" required>
+                          </div>
+                          <br>
+                          <div class="inputBoxWrite">
+                              <textarea placeholder="Write Your Blog Here..." onfocus = "this.placeholder = '' " onblur = "this.placeholder = 'Write Your Blog Here...' " name="content" spellcheck="true" required></textarea>
+                          </div>
+                          <br>
+
+                          <div class="file_upload">
+                              <input type="file" placeholder="Choose Image" name="fileupload">
+                          </div>
+                          <br>
+                      <imput type="submit" class="button button1" value="Submit" name="submit">POST</button>
+                      </form>
+                  </div>
+                </div>
+                <div class="cotainertwo">
+                    <div class="formtwo">
+                        <h2>CATEGORIES</h2>
+                        <div class="main">
+                            <!-- Portfolio Gallery Grid -->
+                            <div class="row">
+                                <div class="column">
+                                    <div class="content">
+                                        <a href="food.html">
+                                        <img src="DISCOVER MORE.png" alt="DISCOVER MORE" style="width:100%">
+                                        </a>
+                                        <h3>FOOD</h3>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="content">
+                                        <a href="lifestyle.html">
+                                        <img src="LYFSTYLE.png" alt="LIFESTYLE" style="width:100%">
+                                        </a>
+                                        <h3>LIFESTYLE</h3>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="content">
+                                        <a href="fashion.html">
+                                        <img src="BEAUTY.png" alt="BEAUTY" style="width:100%">
+                                        </a>
+                                        <h3>FASHION</h3>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="content">
+                                        <a href="travel.html">
+                                        <img src="Travell.png" alt="TRAVELL WITH US" style="width:100%">
+                                        </a>
+                                        <h3>TRAVEL</h3>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="content">
+                                        <img src="personal vlog.png" alt="TRAVELL WITH US" style="width:100%">
+                                        <h3>PERSONAL</h3>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="content">
+                                        <img src="fashion.jpg" alt="TRAVELL WITH US" style="width:100%">
+                                        <h3>AFFILIATE</h3>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="content">
+                                        <img src="Business_corporate blogs.png" alt="TRAVELL WITH US" style="width:100%">
+                                        <h3>BUSINESS</h3>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="content">
+                                        <a href="socialsatire.html">
+                                        <img src="Satire.jpg" alt="TRAVELL WITH US" style="width:100%">
+                                        </a>
+                                        <h3>SATIRE</h3>
+                                    </div>
+                                </div>
+                                    <!-- END GRID -->
+                        </div>
+                    </div>
+        </section>
+
+      <script src="./js/LOGIN.JS"></script>
+  </body>

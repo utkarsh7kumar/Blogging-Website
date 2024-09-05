@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating Gradiant Border Cards</title> 
+        <link rel="stylesheet" type="text/css" href="./css/cards.css">
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+    </head>
+    
+    <body>
+
+        <div class="container">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <h2>Mystery</h2>
+                    
+                    <p>"The true mystery of the world is the visible, not the invisible." - Oscar Wilde</p>
+                    <p>Had a blast being Sherlock Holmes? Write a review now...</p>
+                
+                    <a href="review.html">Review</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <br>
+                    <h2>Romance</h2>
+                    <p>"I love you, and that's the beginning and end of everything." - F. Scott Fitzgerald</p>
+                    <p>Swooning in the love-struck lanes? Write a review now...</p>
+                    <a href="review.html">Review</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <br>
+                    <h2>Comedy</h2>
+                    <p>"Life is a tragedy when seen in close-up, but a comedy in long-shot." - Charlie Chaplin</p>
+                    <p>Read a comedy of errors? Write a review now...</p>
+                    <a href="review.html">Review</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <br>
+                    <h2>Thriller</h2>
+                    <p>"You are not afraid of the dark, are you?"</p>
+                    <p>Read a nerve-wrenching thriller? Write a review now...</p>
+                    <a href="review.html">Review</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <br>
+                    <h2>Sci-Fi</h2>
+                    <p>"Science fiction is not prescriptive; it is descriptive." - Ursula K. Le Guin</p>
+                    <p>Juggling between space and time? Write a review now...</p>
+                    <a href="review.html">Review</a>
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <br>
+                    <h2>Miscellaneous</h2>
+                    <p>"That's the thing about pain, it demands to be felt." - John Green</p>
+                    <p>Wanna tell the world about the last book you read? Write a review now...</p>
+                    <a href="review.html">Review</a>
+                </div>
+            </div>
+        </div>
+
+
+        <header id="sidenav">
+            <i class="fas fa-bars" aria-hidden="true" id="menu"></i>
+            
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="cards.html"><i class="fa-solid fa-book-open-reader"></i> Genres</a></li>
+                    <li><a href="index.html#cat"><i class="fa-solid fa-book-open-reader"></i> Categories</a></li>
+                    <li><a href="RECENT POST.html"><i class="fa-solid fa-blog"></i> Recent Posts</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-house"></i> About Us</a></li>
+                    <li><a href="FAQ.HTML"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                    <li><a href="index.html#contact"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                    <li><a href="WRITEVLOG.HTML"><i class="fa-solid fa-pen-to-square"></i> Write Blog</a></li>
+                </ul>
+            
+        </header>
+        
+        <script type="text/javascript">
+            var menu = document.getElementById("menu");
+            var sidenav = document.getElementById("sidenav");
+            sidenav.style.width="0px";
+            menu.onclick=function(){
+                if(sidenav.style.width=="0px"){
+                    sidenav.style.width="250px";
+                }
+                else{
+                    sidenav.style.width="0px";
+                }
+            }
+        </script>
+
+    </body>
+</html>

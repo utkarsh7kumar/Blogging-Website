@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <!---Owl-carousal-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!--AOS Library-->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="./css/all.css">
+    <!--custom styles-->
+    <link rel="stylesheet" href="./css/review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+
+        <section>
+            <div class="container_one">
+                <form>
+        
+                <div class="title">
+                    <input type="text" placeholder="Enter title of the book..." onfocus="this.placeholder = '' " onblur = "this.placeholder = 'Enter title of the book...'"  name="title_book" spellcheck="true">            
+                </div>
+        
+                <div class="input_box">
+                    <textarea placeholder="Enter your review here..." name="review" onfocus="this.placeholder = '' " onblur = "this.placeholder = 'Enter your review here...'" spellcheck="true"></textarea>
+                </div>
+        
+                <div class="submit_btn">
+                    <button type="button" name="post">Post</button>
+                </div>
+        
+                </form>
+            </div>
+        
+            </section>
+    
+        
+        
+        <header id="sidenav">
+            <i class="fas fa-bars" aria-hidden="true" id="menu"></i>
+            
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="cards.html"><i class="fa-solid fa-book-open-reader"></i> Genres</a></li>
+                    <li><a href="index.html#cat"><i class="fa-solid fa-book-open-reader"></i> Categories</a></li>
+                    <li><a href="RECENT POST.html"><i class="fa-solid fa-blog"></i> Recent Posts</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-house"></i> About Us</a></li>
+                    <li><a href="FAQ.HTML"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                    <li><a href="index.html#contact"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                    <li><a href="WRITEVLOG.HTML"><i class="fa-solid fa-pen-to-square"></i> Write Blog</a></li>
+                </ul>
+            
+        </header>
+    
+        
+        
+    
+        
+
+  
+
+    <script type="text/javascript">
+        var menu = document.getElementById("menu");
+        var sidenav = document.getElementById("sidenav");
+        sidenav.style.width="0px";
+        menu.onclick=function(){
+            if(sidenav.style.width=="0px"){
+                sidenav.style.width="250px";
+            }
+            else{
+                sidenav.style.width="0px";
+            }
+        }
+    </script>
+
+
+</body>

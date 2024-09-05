@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/lifestyle.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <!--custom styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Blogger</title>    
+
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+
+        <div class="title">
+            <h1>LIFESTYLE</h1>
+        </div>        
+      
+
+        <div class="card" data-tilt>
+            <img src="LIFESTYLE.jpg">
+            <h2>Living By Your Rules</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint unde molestias culpa vel accusantium quod maiores deserunt placeat ex omnis illum eos tempora minima aspernatur</p>
+            
+            <a href="#" class="btn">Read</a>
+        </div>
+
+    </div>
+
+    <header id="sidenav">
+        <i class="fas fa-bars" aria-hidden="true" id="menu"></i>
+        
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="index.html#cat"><i class="fa-solid fa-book-open-reader"></i> Categories</a></li>
+                <li><a href="RECENT POST.html"><i class="fa-solid fa-blog"></i> Recent Posts</a></li>
+                <li><a href="cards.html"><i class="fa-solid fa-book-open-reader"></i> Review</a></li>
+                <li><a href="aboutus.html"><i class="fa-solid fa-house"></i> About Us</a></li>
+                <li><a href="FAQ.HTML"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                <li><a href="index.html#contact"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                <li><a href="WRITEVLOG.HTML"><i class="fa-solid fa-pen-to-square"></i> Write Blog</a></li>
+            </ul>
+        
+    </header>
+
+    <script src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        var menu = document.getElementById("menu");
+        var sidenav = document.getElementById("sidenav");
+        sidenav.style.width="0px";
+        menu.onclick=function(){
+            if(sidenav.style.width=="0px"){
+                sidenav.style.width="250px";
+            }
+            else{
+                sidenav.style.width="0px";
+            }
+        }
+    </script>
+
+</body>
